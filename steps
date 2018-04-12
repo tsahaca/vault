@@ -1,5 +1,5 @@
 1. Generate Vault Server Certificate and Key
-openssl req -config vault-cert.conf -x509 -newkey rsa:2048 -keyout vault-key.pem -out vault-cert.pem -days 365 -extensions v3_req
+openssl req -config vault-cert.conf -passout pass:"changeit" -x509 -newkey rsa:2048 -keyout vault-key.pem -out vault-cert.pem -days 365 -extensions v3_req
 2. Create vault server policy file vault.hcl
 3. vault server -config=vault.hcl
 2. set VAULT_ADDR
