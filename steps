@@ -1,0 +1,9 @@
+1. vault server -config=vault.hcl
+2. set VAULT_ADDR
+2. vault operator init
+3. save the output to a file
+4. unseal vault
+vault operator unseal  Nlkw97NbFwJAHtPfKKdKUbSIzgjsjST3H6lKJ2lK/P0/
+vault operator unseal  c1ZyTZk82b5bnCWOTPinAcuIwC7tNr2av87jvgSA6wpx
+vault operator unseal  PdLF08z7L2sxnI1P2f6+mPE3HKbLvSk/X1gp2WyuZYy8
+5. set 
